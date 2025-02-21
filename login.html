@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet">
+  </head>
+
+  <body>
+    <div class="bg">
+      <div class="container">
+        <div class="signup">
+          <div class="signup_content">
+            <h1 class="signup_title">Create Account</h1>
+
+            <div class="social-buttons">
+              <button class="social-button">
+                <img src="https://api.iconify.design/flat-color-icons/google.svg" alt="Google">
+              </button>
+              <button class="social-button">
+                <img src="https://api.iconify.design/logos/facebook.svg" alt="Facebook">
+              </button>
+              <button class="social-button">
+                <img src="https://api.iconify.design/logos/twitter.svg" alt="Twitter">
+              </button>
+              <button class="social-button">
+                <img src="https://api.iconify.design/logos/github.svg" alt="Github">
+              </button>
+            </div>
+
+            <p class="signup_text">or use your email for registration:</p>
+
+            <form class="form">
+              <div class="form_group">
+                <input type="text" required class="form_input" placeholder="Name">
+              </div>
+              <div class="form_group">
+                <input type="email" required class="form_input" placeholder="Email">
+              </div>
+              <div class="form_group">
+                <input type="password" required class="form_input" placeholder="Password">
+              </div>
+
+              <div class="form_checkbox">
+                <input type="checkbox" required id="terms" class="form_checkbox-input">
+                <label for="terms" aria-required="true" class="form_checkbox-label">
+                  I agree to the <a href="#" class="form_link">Terms</a> and
+                  <a href="#" class="form_link">Privacy Policy</a>
+                </label>
+              </div>
+
+              <div class="form_buttons">
+                <button type="submit" class="button button--primary">Sign Up</button>
+                <button type="button" class="button button--outline">Sign In</button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="img-cont">
+          <img class="side-img" src="sign-in-dark.webp" alt="">
+        </div>
+      </div>
+    </div>
+  </body>
+
+</html>
