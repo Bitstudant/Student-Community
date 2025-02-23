@@ -22,21 +22,29 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   min-height: 100vh;
+  animation:  opaciting 0.8s ease-out forwards;
 }
 
-.signup {
+@keyframes opaciting {
+  0%{opacity: 0; translate:40px}
+  25%{opacity: 0.25; translate:20px}
+  50%{opacity: 0.5; translate:10px}
+  100%{opacity: 1; translate:0px}
+}
+
+.signup,.signin {
   display: flex;
   align-items: center;
   justify-content: end;
   padding: 2rem 1rem 2rem 2rem;
 }
 
-.signup_content {
+.signup_content, .signin_content {
   width: 100%;
   max-width: 400px;
 }
 
-.signup_title {
+.signup_title, .signin_title {
   color: var(--color-primary);
   font-size: 2.5rem;
   font-weight: 800;
@@ -44,7 +52,7 @@ body {
   margin-bottom: 2rem;
 }
 
-.signup_text {
+.signup_text, .signin_text {
   text-align: center;
   color: var(--color-gray);
   font-size: 0.875rem;
@@ -189,13 +197,17 @@ body {
   border-radius: .9rem;
 }
 
+.popup-img{ 
+  animation: popup 0.6s ease-out forwards;
+}
+
 /*For Responsive Design */
 @media (max-width: 768px) {
   .container {
     grid-template-columns: 1fr;
   }
 
-  .signup{
+  .signup,.signin{
     justify-content: center;
   }
 
@@ -216,3 +228,16 @@ body {
   outline: 2px solid var(--color-primary);
   outline-offset: 2px;
 }
+
+.signin{
+  display: none;
+  animation: popup 0.8s ease-out forwards;
+}
+
+@keyframes popup {
+  0%{opacity: 0;}
+  25%{opacity: 0.25;}
+  50%{opacity: 0.5;}
+  100%{opacity: 1;}
+}
+
