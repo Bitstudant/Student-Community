@@ -79,7 +79,6 @@ body {
     margin-right: -60px;
     display: flex;
     align-items: center;
-    transform: scale(1.03);
 }
 
 .main-red-button-hover a {
