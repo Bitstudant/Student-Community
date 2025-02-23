@@ -95,9 +95,9 @@ body {
   transform: scale(1.1);
 }
 
-.social-button img {
-  width: 1.5rem;
-  height: 1.5rem;
+.fab{
+  text-decoration: none;
+  color: white;
 }
 
 .form {
