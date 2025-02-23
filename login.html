@@ -4,7 +4,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Create Account</title>
+    <title>Sign up / Sign in</title>
     <link rel="stylesheet" href="login.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,6 +16,40 @@
   <body>
     <div class="bg">
       <div class="container">
+        <div class="signin">
+          <div class="signin_content">
+            <h1 class="signin_title">Sign in</h1>
+
+            <div class="social-buttons">
+              <button class="social-button">
+                <img src="https://api.iconify.design/flat-color-icons/google.svg" alt="Google">
+              </button>
+              <button class="social-button">
+                <img src="https://api.iconify.design/logos/facebook.svg" alt="Facebook">
+              </button>
+              <button class="social-button">
+                <img src="https://api.iconify.design/logos/twitter.svg" alt="Twitter">
+              </button>
+              <button class="social-button">
+                <img src="https://api.iconify.design/logos/github.svg" alt="Github">
+              </button>
+            </div>
+
+            <p class="signup_text">or use your username and password:</p>
+
+            <form class="form">
+              <div class="form_group">
+                <input type="text" required class="form_input" placeholder="Name">
+              </div>
+              <div class="form_group">
+                <input type="password" required class="form_input" placeholder="Password">
+              </div>
+              <div class="form_buttons">
+                <button type="button" class="button button--primary">Sign In</button>
+              </div>
+            </form>
+          </div>
+        </div>
         <div class="signup">
           <div class="signup_content">
             <h1 class="signup_title">Create Account</h1>
@@ -58,7 +92,7 @@
 
               <div class="form_buttons">
                 <button type="submit" class="button button--primary">Sign Up</button>
-                <button type="button" class="button button--outline">Sign In</button>
+                <button type="button" class="button button--outline" onclick="signIn()">Sign In</button>
               </div>
             </form>
           </div>
@@ -68,6 +102,14 @@
         </div>
       </div>
     </div>
+
+    <script>
+      function signIn(){
+        document.querySelector('.signin').style.display='flex';
+        document.querySelector('.signup').style.display='none';
+        document.querySelector('.side-img').classList.add('popup-img')
+      }
+    </script>
   </body>
 
 </html>
