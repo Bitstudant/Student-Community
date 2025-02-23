@@ -30,7 +30,7 @@
               <button class="social-button">
                 <img src="https://api.iconify.design/logos/twitter.svg" alt="Twitter">
               </button>
-              <button class="social-button">
+              <button class="social-button" id="github">
                 <img src="https://api.iconify.design/logos/github.svg" alt="Github">
               </button>
             </div>
@@ -39,11 +39,12 @@
 
             <form class="form">
               <div class="form_group">
-                <input type="text" required class="form_input" placeholder="Name">
+                <input type="text" required class="form_input" placeholder="Username">
               </div>
               <div class="form_group">
                 <input type="password" required class="form_input" placeholder="Password">
               </div>
+              <p class="account-text">don't have account? <a onclick="signup()"> create account</a></p>
               <div class="form_buttons">
                 <button type="button" class="button button--primary">Sign In</button>
               </div>
@@ -76,6 +77,9 @@
                 <input type="text" required class="form_input" placeholder="Name">
               </div>
               <div class="form_group">
+                <input type="text" required class="form_input" placeholder="Username">
+              </div>
+              <div class="form_group">
                 <input type="email" required class="form_input" placeholder="Email">
               </div>
               <div class="form_group">
@@ -91,8 +95,8 @@
               </div>
 
               <div class="form_buttons">
-                <button type="submit" class="button button--primary">Sign Up</button>
-                <button type="button" class="button button--outline" onclick="signIn()">Sign In</button>
+                <button type="submit" class="button button--primary">Create Account</button>
+                <button type="button" class="button button--outline" onclick="signIn()">Log In</button>
               </div>
             </form>
           </div>
@@ -104,6 +108,11 @@
     </div>
 
     <script>
+      function signup(){
+        document.querySelector('.signin').style.display='none';
+        document.querySelector('.signup').style.display='flex';
+        document.querySelector('.side-img').classList.add('popup-img')
+      }
       function signIn(){
         document.querySelector('.signin').style.display='flex';
         document.querySelector('.signup').style.display='none';
