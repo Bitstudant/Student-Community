@@ -1,5 +1,6 @@
 :root {
-  --color-primary: #12bdf6dd;
+  --color-primary: #e74c3c;
+  --color-secondary: #12bdf6dd;
   --color-gray: #767676;
   --color-light: #F5F5F5;
   --color-border: #E5E5E5;
@@ -35,7 +36,7 @@ body {
 .signup,.signin {
   display: flex;
   align-items: center;
-  justify-content: end;
+  justify-content: space-around;
   padding: 2rem 1rem 2rem 2rem;
 }
 
@@ -200,9 +201,9 @@ body {
 .side-img{
   height: 100vh;
   display: flex;
-  align-items:center;
+  align-items: center;
   justify-content: center;
-  max-width: 500px;
+  max-width: 600px;
   max-height: 87vh;
   border-radius: .9rem;
 }
@@ -226,8 +227,7 @@ body {
   }
 }
 
-@media (prefers-reduced-motion: reduce) {
-
+@media (prefers-reduced-motion: reduce) { 
   .button,
   .social-button {
     transition: none;
