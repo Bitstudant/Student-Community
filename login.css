@@ -76,6 +76,7 @@ body {
 
 .account-text a:hover{
   color: red;
+  cursor: pointer;
 }
 
 .social-button {
